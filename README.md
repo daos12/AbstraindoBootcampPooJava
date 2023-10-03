@@ -1,27 +1,27 @@
-<h1 align="center">:file_cabinet: Exemplo de README.md</h1>
+<h1>Exemplo de README.md</h1>
 
-## :memo: Descrição
+## Descrição
 Escreva uma descrição do seu projeto
 
-## :books: Funcionalidades
+## Funcionalidades
 * <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
 
-## :wrench: Tecnologias utilizadas
+## Tecnologias utilizadas
 * Tecnologia;
 
-## :rocket: Rodando o projeto
+## Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
 ```
 <linha de comando>
 ```
 
-## :soon: Implementação futura
+## Implementação futura
 * O que será implementado na próxima sprint?
 
-## :handshake: Colaboradores
+## Colaboradores
 <table>
   <tr>
-    <td align="center">
+    <td>
       <a href="https://github.com/CharlesReisDev">
         <img src="https://avatars.githubusercontent.com/u/56259137?v=4" width="100px;" alt="Foto de Charles no GitHub"/><br>
         <sub>
@@ -32,4 +32,4 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
   </tr>
 </table>
 
-## :dart: Status do projeto
+## Status do projeto
