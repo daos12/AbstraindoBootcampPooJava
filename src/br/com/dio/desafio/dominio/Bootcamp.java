@@ -8,9 +8,10 @@ import java.util.Set;
 
 public class Bootcamp {
     private String nome;
+    private String descricao;
 
     private final LocalDate dataInicial = LocalDate.now();
-    private final LocalDate dataFianl = dataInicial.plusDays(45);
+    private final LocalDate dataFinal = dataInicial.plusDays(45);
     private Set<Dev> devsInscritos = new HashSet<>(); //Não fica em ordem, sendo unico cadastro
     private Set<Conteudo> conteudos = new LinkedHashSet<>(); //Fica em ordem, sendo unico cadastro
 
@@ -26,8 +27,8 @@ public class Bootcamp {
         return dataInicial;
     }
 
-    public LocalDate getDataFianl() {
-        return dataFianl;
+    public LocalDate getDataFinal() {
+        return dataFinal;
     }
 
     public Set<Dev> getDevsInscritos() {
@@ -38,6 +39,7 @@ public class Bootcamp {
         this.devsInscritos = devsInscritos;
     }
 
+
     public Set<Conteudo> getConteudos() {
         return conteudos;
     }
@@ -46,16 +48,26 @@ public class Bootcamp {
         this.conteudos = conteudos;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
     @Override //Utilizado para o LinkedHashSet
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bootcamp bootcamp = (Bootcamp) o;
-        return Objects.equals(nome, bootcamp.nome) && Objects.equals(dataInicial, bootcamp.dataInicial) && Objects.equals(dataFianl, bootcamp.dataFianl) && Objects.equals(devsInscritos, bootcamp.devsInscritos) && Objects.equals(conteudos, bootcamp.conteudos);
+        return Objects.equals(nome, bootcamp.nome) && Objects.equals(dataInicial, bootcamp.dataInicial) && Objects.equals(dataFinal, bootcamp.dataFinal) && Objects.equals(devsInscritos, bootcamp.devsInscritos) && Objects.equals(conteudos, bootcamp.conteudos);
     }
 
     @Override //Utilizado para o LinkedHashSet
     public int hashCode() {
-        return Objects.hash(nome, dataInicial, dataFianl, devsInscritos, conteudos);
+        return Objects.hash(nome, dataInicial, dataFinal, devsInscritos, conteudos);
     }
+
+
 }
